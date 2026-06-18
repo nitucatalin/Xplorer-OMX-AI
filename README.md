@@ -1,6 +1,6 @@
 # Xplorer-OMX-AI — manipulare mobilă autonomă prin Physical AI
 
-Cod sursă al sistemului din lucrarea de diplomă: un braț robotic OMX-AI montat
+Cod sursă al sistemului din lucrarea de diplomă - brațul robotic OMX-AI montat
 pe platforma mobilă autonomă Xplorer-A, care execută autonom un task de apucare
 și plasare prin învățare prin imitație (politica ACT), integrat cu navigarea Nav2.
 

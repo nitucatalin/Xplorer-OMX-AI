@@ -1,0 +1,45 @@
+# ---- date / artefacte grele (nu se urcă pe GitHub) ----
+*.mcap
+*.bag
+**/rezultate/bags/
+**/bags_sim/
+infer_logs/
+logs/
+
+# ---- modele / ponderi ----
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+lerobot_models/
+
+# ---- build ROS2 ----
+**/build/
+**/install/
+**/log/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# ---- media grea / CAD ----
+*.mov
+*.mp4
+*.HEIC
+*.heic
+*.webp
+*.avif
+*.step
+*.3mf
+*.stl
+
+# ---- documente binare ----
+*.docx
+*.pdf
+
+# ---- sistem ----
+.DS_Store

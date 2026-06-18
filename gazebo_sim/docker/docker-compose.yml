@@ -1,0 +1,22 @@
+# ============================================================================
+# docker-compose.yml — pornește mediul de simulare în browser
+# Utilizare (din folderul gazebo_sim/docker):
+#   docker compose up --build -d
+# Apoi deschide în browser:  http://localhost:6080
+# ============================================================================
+services:
+  ros2sim:
+    build: .
+    image: xplorer-omx-sim:jazzy
+    container_name: xplorer_omx_sim
+    ports:
+      - "6080:80"          # desktop noVNC în browser
+    volumes:
+      - ../ros2_ws:/home/ubuntu/ros2_ws   # workspace-ul ROS2 montat din Mac
+    environment:
+      - RESOLUTION=1680x1050
+      - LIBGL_ALWAYS_SOFTWARE=1
+    shm_size: "2gb"
+    security_opt:
+      - seccomp=unconfined
+    restart: unless-stopped

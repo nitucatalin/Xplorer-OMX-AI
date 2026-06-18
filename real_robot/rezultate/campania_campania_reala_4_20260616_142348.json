@@ -1,0 +1,287 @@
+{
+  "label": "campania_reala_4",
+  "timestamp": "2026-06-16T14:34:37",
+  "platform": "real_robot",
+  "config": {
+    "poi": [
+      1.5,
+      1.0,
+      0.0
+    ],
+    "home": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "runs": 5,
+    "episodes": 1,
+    "nav_timeout_s": 120.0,
+    "manip_timeout_s": 90.0
+  },
+  "runs": [
+    {
+      "timestamp": "2026-06-16T14:23:48",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 14.28,
+      "nav_to_poi_status": "SUCCEEDED",
+      "pose_at_poi_amcl": [
+        1.65,
+        0.894,
+        0.45
+      ],
+      "manip_s": 31.98,
+      "manip_result": {
+        "timestamp": "2026-06-16T14:24:35",
+        "mode": "real",
+        "nas": 50,
+        "fps": 30,
+        "episode_time_s": 26.0,
+        "session_total_s": 31.98,
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "duration_s": 26.86,
+            "steps": 780,
+            "reinferences": 16,
+            "infer_ms_median": 79.8,
+            "reason": "completed"
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "nav_to_home_s": 73.32,
+      "nav_to_home_status": "ABORTED",
+      "success": false,
+      "reason": "partial",
+      "run": 1
+    },
+    {
+      "timestamp": "2026-06-16T14:25:52",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 42.7,
+      "nav_to_poi_status": "SUCCEEDED",
+      "pose_at_poi_amcl": [
+        1.49,
+        0.973,
+        1.119
+      ],
+      "manip_s": 32.03,
+      "manip_result": {
+        "timestamp": "2026-06-16T14:27:07",
+        "mode": "real",
+        "nas": 50,
+        "fps": 30,
+        "episode_time_s": 26.0,
+        "session_total_s": 32.03,
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "duration_s": 26.91,
+            "steps": 780,
+            "reinferences": 16,
+            "infer_ms_median": 79.9,
+            "reason": "completed"
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "nav_to_home_s": 15.46,
+      "nav_to_home_status": "SUCCEEDED",
+      "success": true,
+      "reason": "completed",
+      "run": 2
+    },
+    {
+      "timestamp": "2026-06-16T14:27:26",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 71.06,
+      "nav_to_poi_status": "SUCCEEDED",
+      "pose_at_poi_amcl": [
+        1.398,
+        1.028,
+        0.492
+      ],
+      "manip_s": 32.32,
+      "manip_result": {
+        "timestamp": "2026-06-16T14:29:10",
+        "mode": "real",
+        "nas": 50,
+        "fps": 30,
+        "episode_time_s": 26.0,
+        "session_total_s": 32.32,
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "duration_s": 27.2,
+            "steps": 780,
+            "reinferences": 16,
+            "infer_ms_median": 81.3,
+            "reason": "completed"
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "nav_to_home_s": 38.43,
+      "nav_to_home_status": "SUCCEEDED",
+      "success": true,
+      "reason": "completed",
+      "run": 3
+    },
+    {
+      "timestamp": "2026-06-16T14:29:51",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 33.14,
+      "nav_to_poi_status": "SUCCEEDED",
+      "pose_at_poi_amcl": [
+        1.412,
+        1.062,
+        0.601
+      ],
+      "manip_s": 32.0,
+      "manip_result": {
+        "timestamp": "2026-06-16T14:30:57",
+        "mode": "real",
+        "nas": 50,
+        "fps": 30,
+        "episode_time_s": 26.0,
+        "session_total_s": 32.0,
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "duration_s": 26.88,
+            "steps": 780,
+            "reinferences": 16,
+            "infer_ms_median": 78.5,
+            "reason": "completed"
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "nav_to_home_s": 87.6,
+      "nav_to_home_status": "SUCCEEDED",
+      "success": true,
+      "reason": "completed",
+      "run": 4
+    },
+    {
+      "timestamp": "2026-06-16T14:32:28",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 33.71,
+      "nav_to_poi_status": "SUCCEEDED",
+      "pose_at_poi_amcl": [
+        1.362,
+        1.021,
+        1.22
+      ],
+      "manip_s": 31.96,
+      "manip_result": {
+        "timestamp": "2026-06-16T14:33:34",
+        "mode": "real",
+        "nas": 50,
+        "fps": 30,
+        "episode_time_s": 26.0,
+        "session_total_s": 31.96,
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "duration_s": 26.85,
+            "steps": 780,
+            "reinferences": 16,
+            "infer_ms_median": 79.9,
+            "reason": "completed"
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "nav_to_home_s": 62.32,
+      "nav_to_home_status": "SUCCEEDED",
+      "success": true,
+      "reason": "completed",
+      "run": 5
+    }
+  ],
+  "totals": {
+    "n_runs": 5,
+    "n_success": 4,
+    "success_rate": 0.8,
+    "avg_nav_to_poi_s": 38.98,
+    "avg_manip_s": 32.06,
+    "avg_nav_to_home_s": 55.43,
+    "complete": true
+  }
+}

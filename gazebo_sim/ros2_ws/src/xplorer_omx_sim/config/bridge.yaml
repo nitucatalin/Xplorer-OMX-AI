@@ -1,0 +1,202 @@
+# ============================================================================
+# bridge.yaml — configurarea ros_gz_bridge intre Gazebo (gz) si ROS 2
+# Echivalentul functional al puntii CycloneDDS din sistemul real:
+# aici puntea e gz <-> ROS, pe acelasi host.
+# ============================================================================
+- ros_topic_name: "/clock"
+  gz_topic_name: "/clock"
+  ros_type_name: "rosgraph_msgs/msg/Clock"
+  gz_type_name: "gz.msgs.Clock"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/cmd_vel"
+  gz_topic_name: "/model/xplorer_omx/cmd_vel"
+  ros_type_name: "geometry_msgs/msg/Twist"
+  gz_type_name: "gz.msgs.Twist"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/odom"
+  gz_topic_name: "/model/xplorer_omx/odometry"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/tf"
+  gz_topic_name: "/model/xplorer_omx/tf"
+  ros_type_name: "tf2_msgs/msg/TFMessage"
+  gz_type_name: "gz.msgs.Pose_V"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/scan"
+  gz_topic_name: "/scan_gz"
+  ros_type_name: "sensor_msgs/msg/LaserScan"
+  gz_type_name: "gz.msgs.LaserScan"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/joint_states"
+  gz_topic_name: "/model/xplorer_omx/joint_states"
+  ros_type_name: "sensor_msgs/msg/JointState"
+  gz_type_name: "gz.msgs.Model"
+  direction: GZ_TO_ROS
+
+# NOTA: /world/.../dynamic_pose/info din Harmonic vine FARA numele
+# entitatilor (doar ID-uri) — inutilizabil. Ground-truth-ul vine pe
+# topicuri OdometryPublisher cu nume fixe, iar nodul ground_truth_mux
+# le reasambleaza in /sim/dynamic_poses cu child_frame_id corecte.
+- ros_topic_name: "/sim/gt/robot"
+  gz_topic_name: "/model/xplorer_omx/ground_truth"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/sim/gt/obj_0"
+  gz_topic_name: "/model/obj_0/ground_truth"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/sim/gt/obj_1"
+  gz_topic_name: "/model/obj_1/ground_truth"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/sim/gt/obj_2"
+  gz_topic_name: "/model/obj_2/ground_truth"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/sim/gt/obj_3"
+  gz_topic_name: "/model/obj_3/ground_truth"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/sim/gt/obj_4"
+  gz_topic_name: "/model/obj_4/ground_truth"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/sim/gt/obj_5"
+  gz_topic_name: "/model/obj_5/ground_truth"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+- ros_topic_name: "/sim/gt/obj_spawn"
+  gz_topic_name: "/model/obj_spawn/ground_truth"
+  ros_type_name: "nav_msgs/msg/Odometry"
+  gz_type_name: "gz.msgs.Odometry"
+  direction: GZ_TO_ROS
+
+# attach/detach pentru "sudarea" obiectului apucat de gripper
+# (DetachableJoint — pick stabil, obiectul nu mai aluneca din clesti)
+- ros_topic_name: "/gripper/attach_obj_0"
+  gz_topic_name: "/gripper/attach_obj_0"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/detach_obj_0"
+  gz_topic_name: "/gripper/detach_obj_0"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/attach_obj_1"
+  gz_topic_name: "/gripper/attach_obj_1"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/detach_obj_1"
+  gz_topic_name: "/gripper/detach_obj_1"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/attach_obj_2"
+  gz_topic_name: "/gripper/attach_obj_2"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/detach_obj_2"
+  gz_topic_name: "/gripper/detach_obj_2"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/attach_obj_3"
+  gz_topic_name: "/gripper/attach_obj_3"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/detach_obj_3"
+  gz_topic_name: "/gripper/detach_obj_3"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/attach_obj_4"
+  gz_topic_name: "/gripper/attach_obj_4"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/detach_obj_4"
+  gz_topic_name: "/gripper/detach_obj_4"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/attach_obj_5"
+  gz_topic_name: "/gripper/attach_obj_5"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/detach_obj_5"
+  gz_topic_name: "/gripper/detach_obj_5"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/attach_obj_spawn"
+  gz_topic_name: "/gripper/attach_obj_spawn"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+- ros_topic_name: "/gripper/detach_obj_spawn"
+  gz_topic_name: "/gripper/detach_obj_spawn"
+  ros_type_name: "std_msgs/msg/Empty"
+  gz_type_name: "gz.msgs.Empty"
+  direction: ROS_TO_GZ
+
+# --- comenzi pozitie articulatii brat (Float64 -> gz Double) ---
+- ros_topic_name: "/arm/shoulder_pan/cmd_pos"
+  gz_topic_name: "/arm/shoulder_pan/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/arm/shoulder_lift/cmd_pos"
+  gz_topic_name: "/arm/shoulder_lift/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/arm/elbow_flex/cmd_pos"
+  gz_topic_name: "/arm/elbow_flex/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/arm/wrist_flex/cmd_pos"
+  gz_topic_name: "/arm/wrist_flex/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/arm/gripper_left/cmd_pos"
+  gz_topic_name: "/arm/gripper_left/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/arm/gripper_right/cmd_pos"
+  gz_topic_name: "/arm/gripper_right/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ

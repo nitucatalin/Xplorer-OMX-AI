@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<!-- GENERAT de tools/gen_scene.py — world laborator + obiecte random.
+     Obiectele si POI-urile (config/pois.yaml) sunt generate impreuna. -->
+<sdf version="1.8">
+  <world name="lab_world">
+
+    <physics name="default_physics" type="ignored">
+      <!-- 4 ms: injumatateste sarcina CPU a fizicii (fara GPU in Docker,
+           pasul de 2 ms ducea simularea sub timp real si Nav2 sufoca) -->
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-sensors-system"
+            name="gz::sim::systems::Sensors">
+      <render_engine>ogre2</render_engine>
+    </plugin>
+
+    <light type="directional" name="sun">
+      <cast_shadows>false</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.3 0.2 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <surface><friction><ode><mu>0.8</mu><mu2>0.8</mu2></ode></friction></surface>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material><ambient>0.75 0.75 0.75 1</ambient><diffuse>0.75 0.75 0.75 1</diffuse></material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- pereti laborator: interior x in [-1.5, 6.5], y in [-2.5, 3.5] -->
+    <model name="walls">
+      <static>true</static>
+      <link name="link">
+        <collision name="north_c"><pose>2.5 3.575 0.5 0 0 0</pose>
+          <geometry><box><size>8.3 0.15 1.0</size></box></geometry></collision>
+        <visual name="north_v"><pose>2.5 3.575 0.5 0 0 0</pose>
+          <geometry><box><size>8.3 0.15 1.0</size></box></geometry>
+          <material><ambient>0.85 0.82 0.75 1</ambient><diffuse>0.85 0.82 0.75 1</diffuse></material></visual>
+        <collision name="south_c"><pose>2.5 -2.575 0.5 0 0 0</pose>
+          <geometry><box><size>8.3 0.15 1.0</size></box></geometry></collision>
+        <visual name="south_v"><pose>2.5 -2.575 0.5 0 0 0</pose>
+          <geometry><box><size>8.3 0.15 1.0</size></box></geometry>
+          <material><ambient>0.85 0.82 0.75 1</ambient><diffuse>0.85 0.82 0.75 1</diffuse></material></visual>
+        <collision name="east_c"><pose>6.575 0.5 0.5 0 0 0</pose>
+          <geometry><box><size>0.15 6.0 1.0</size></box></geometry></collision>
+        <visual name="east_v"><pose>6.575 0.5 0.5 0 0 0</pose>
+          <geometry><box><size>0.15 6.0 1.0</size></box></geometry>
+          <material><ambient>0.85 0.82 0.75 1</ambient><diffuse>0.85 0.82 0.75 1</diffuse></material></visual>
+        <collision name="west_c"><pose>-1.575 0.5 0.5 0 0 0</pose>
+          <geometry><box><size>0.15 6.0 1.0</size></box></geometry></collision>
+        <visual name="west_v"><pose>-1.575 0.5 0.5 0 0 0</pose>
+          <geometry><box><size>0.15 6.0 1.0</size></box></geometry>
+          <material><ambient>0.85 0.82 0.75 1</ambient><diffuse>0.85 0.82 0.75 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <model name="box_a">
+      <static>true</static>
+      <pose>4.5 -1.2 0.4 0 0 0</pose>
+      <link name="link">
+        <collision name="c"><geometry><box><size>0.8 0.8 0.8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.8 0.8 0.8</size></box></geometry>
+          <material><ambient>0.5 0.35 0.2 1</ambient><diffuse>0.5 0.35 0.2 1</diffuse></material></visual>
+      </link>
+    </model>
+    <model name="box_b">
+      <static>true</static>
+      <pose>0.5 2.0 0.4 0 0 0</pose>
+      <link name="link">
+        <collision name="c"><geometry><box><size>0.6 1.2 0.8</size></box></geometry></collision>
+        <visual name="v"><geometry><box><size>0.6 1.2 0.8</size></box></geometry>
+          <material><ambient>0.5 0.35 0.2 1</ambient><diffuse>0.5 0.35 0.2 1</diffuse></material></visual>
+      </link>
+    </model>
+    <model name="pillar">
+      <static>true</static>
+      <pose>4.0 2.2 0.4 0 0 0</pose>
+      <link name="link">
+        <collision name="c"><geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry></collision>
+        <visual name="v"><geometry><cylinder><radius>0.3</radius><length>0.8</length></cylinder></geometry>
+          <material><ambient>0.6 0.6 0.65 1</ambient><diffuse>0.6 0.6 0.65 1</diffuse></material></visual>
+      </link>
+    </model>
+
+    <!-- ===== OBIECTE DE COLECTAT (generate random, seed=11) ===== -->
+    <model name="obj_0">
+      <pose>2.192 2.062 0.014 0 0 0.597</pose>
+      <link name="link">
+        <inertial><mass>0.05</mass><inertia><ixx>1e-5</ixx><iyy>1e-5</iyy><izz>1e-5</izz><ixy>0</ixy><ixz>0</ixz><iyz>0</iyz></inertia></inertial>
+        <collision name="c"><geometry><box><size>0.028 0.028 0.028</size></box></geometry><surface><friction><ode><mu>1.2</mu><mu2>1.2</mu2></ode></friction></surface></collision>
+        <visual name="v"><geometry><box><size>0.028 0.028 0.028</size></box></geometry><material><ambient>0.55 0.20 0.65 1</ambient><diffuse>0.55 0.20 0.65 1</diffuse></material></visual>
+      </link>
+      <plugin filename="gz-sim-odometry-publisher-system"
+              name="gz::sim::systems::OdometryPublisher">
+        <odom_topic>/model/obj_0/ground_truth</odom_topic>
+        <odom_frame>gt_world</odom_frame>
+        <robot_base_frame>obj_0_link</robot_base_frame>
+        <odom_publish_frequency>10</odom_publish_frequency>
+      </plugin>
+    </model>
+  </world>
+</sdf>

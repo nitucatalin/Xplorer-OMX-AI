@@ -1,0 +1,55 @@
+{
+  "label": "campania_reala_6",
+  "timestamp": "2026-06-16T15:27:16",
+  "platform": "real_robot",
+  "config": {
+    "poi": [
+      2.0,
+      1.0,
+      0.0
+    ],
+    "home": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "runs": 5,
+    "episodes": 1,
+    "nav_timeout_s": 120.0,
+    "manip_timeout_s": 90.0
+  },
+  "runs": [
+    {
+      "timestamp": "2026-06-16T15:26:34",
+      "poi": [
+        2.0,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 27.59,
+      "nav_to_poi_status": "ABORTED",
+      "pose_at_poi_amcl": [
+        1.128,
+        0.401,
+        -3.101
+      ],
+      "success": false,
+      "reason": "nav_to_poi_failed",
+      "run": 1
+    }
+  ],
+  "totals": {
+    "n_runs": 1,
+    "n_success": 0,
+    "success_rate": 0.0,
+    "avg_nav_to_poi_s": 27.59,
+    "avg_manip_s": 0.0,
+    "avg_nav_to_home_s": 0.0,
+    "complete": true
+  }
+}

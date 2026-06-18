@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-06-11T20:24:14",
+  "poi": [
+    2.082,
+    1.744,
+    -2.0948
+  ],
+  "nav_to_poi_s": 11.34,
+  "align_s": 12.41,
+  "align_err_before_m": 0.2,
+  "align_err_after_m": 0.0078,
+  "manip_s": 27.2,
+  "nav_to_home_s": 10.13,
+  "success": true,
+  "placed_in_box": null,
+  "reason": "",
+  "pose_at_poi_amcl": [
+    1.1045556903163267,
+    0.08148890043384079
+  ],
+  "pose_at_poi_true": [
+    1.1966538082665317,
+    0.17841024523707352
+  ],
+  "manip_result": {
+    "timestamp": "2026-06-11T20:24:04.478247",
+    "mode": "gazebo_sim_adaptive",
+    "episodes": [
+      {
+        "episode": 1,
+        "success": true,
+        "reason": "completed",
+        "object": "obj_0",
+        "placed_in_box": false,
+        "placed_reason": "grasp_failed",
+        "duration_s": 27.2
+      }
+    ],
+    "totals": {
+      "n_episodes": 1,
+      "n_success": 1,
+      "n_failed": 0,
+      "rate": 1.0
+    }
+  }
+}

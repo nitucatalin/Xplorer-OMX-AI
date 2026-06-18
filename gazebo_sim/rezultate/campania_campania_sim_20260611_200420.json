@@ -1,0 +1,169 @@
+{
+  "label": "campania_sim",
+  "timestamp": "2026-06-11T20:04:20",
+  "poi": [
+    2.6972452174268726,
+    -1.3533505143919755,
+    2.4981923363898564
+  ],
+  "home": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "object": "obj_spawn",
+  "n_runs": 3,
+  "runs": [
+    {
+      "timestamp": "2026-06-11T20:02:02",
+      "poi": [
+        2.6972452174268726,
+        -1.3533505143919755,
+        2.4981923363898564
+      ],
+      "nav_to_poi_s": 11.96,
+      "align_s": 30.81,
+      "align_err_before_m": 2.6393,
+      "align_err_after_m": 2.3148,
+      "manip_s": 27.12,
+      "nav_to_home_s": 12.22,
+      "success": true,
+      "placed_in_box": null,
+      "reason": "",
+      "pose_at_poi_amcl": [
+        1.0279737304350438,
+        0.03413921066578178
+      ],
+      "pose_at_poi_true": [
+        1.111315279080979,
+        -0.058634567531547305
+      ],
+      "manip_result": {
+        "timestamp": "2026-06-11T20:01:46.931398",
+        "mode": "gazebo_sim_adaptive",
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "reason": "completed",
+            "object": "obj_0",
+            "placed_in_box": false,
+            "placed_reason": "placed_outside_box",
+            "duration_s": 27.12
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "run": 1
+    },
+    {
+      "timestamp": "2026-06-11T20:03:12",
+      "poi": [
+        2.6972452174268726,
+        -1.3533505143919755,
+        2.4981923363898564
+      ],
+      "nav_to_poi_s": 13.13,
+      "align_s": 12.48,
+      "align_err_before_m": 0.2294,
+      "align_err_after_m": 0.0078,
+      "manip_s": 27.31,
+      "nav_to_home_s": 10.64,
+      "success": true,
+      "placed_in_box": false,
+      "reason": "completed",
+      "pose_at_poi_amcl": [
+        1.178384936459461,
+        -0.06259304018323321
+      ],
+      "pose_at_poi_true": [
+        1.2541260519175867,
+        -0.15918152387050244
+      ],
+      "manip_result": {
+        "timestamp": "2026-06-11T20:03:01.402919",
+        "mode": "gazebo_sim_adaptive",
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "reason": "completed",
+            "object": "obj_spawn",
+            "placed_in_box": false,
+            "placed_reason": "grasp_failed",
+            "duration_s": 27.31
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "run": 2
+    },
+    {
+      "timestamp": "2026-06-11T20:04:20",
+      "poi": [
+        2.6972452174268726,
+        -1.3533505143919755,
+        2.4981923363898564
+      ],
+      "nav_to_poi_s": 12.04,
+      "align_s": 12.32,
+      "align_err_before_m": 0.2102,
+      "align_err_after_m": 0.0078,
+      "manip_s": 27.24,
+      "nav_to_home_s": 10.43,
+      "success": true,
+      "placed_in_box": null,
+      "reason": "",
+      "pose_at_poi_amcl": [
+        1.116318771074363,
+        -0.05432296537955651
+      ],
+      "pose_at_poi_true": [
+        1.1614453410766898,
+        -0.1327484357205448
+      ],
+      "manip_result": {
+        "timestamp": "2026-06-11T20:04:09.983653",
+        "mode": "gazebo_sim_adaptive",
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "reason": "completed",
+            "object": "obj_spawn",
+            "placed_in_box": false,
+            "placed_reason": "grasp_failed",
+            "duration_s": 27.24
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "run": 3
+    }
+  ],
+  "totals": {
+    "n_success": 3,
+    "n_placed_in_box": 0,
+    "success_rate": 1.0,
+    "placed_rate": 0.0,
+    "avg_nav_to_poi_s": 12.38,
+    "avg_align_s": 18.54,
+    "avg_manip_s": 27.22,
+    "avg_nav_to_home_s": 11.1
+  }
+}

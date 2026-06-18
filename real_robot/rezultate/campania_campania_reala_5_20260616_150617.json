@@ -1,0 +1,259 @@
+{
+  "label": "campania_reala_5",
+  "timestamp": "2026-06-16T15:14:54",
+  "platform": "real_robot",
+  "config": {
+    "poi": [
+      1.5,
+      1.0,
+      0.0
+    ],
+    "home": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "runs": 5,
+    "episodes": 1,
+    "nav_timeout_s": 120.0,
+    "manip_timeout_s": 90.0
+  },
+  "runs": [
+    {
+      "timestamp": "2026-06-16T15:06:17",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 13.49,
+      "nav_to_poi_status": "SUCCEEDED",
+      "pose_at_poi_amcl": [
+        1.328,
+        1.006,
+        0.438
+      ],
+      "manip_s": 32.0,
+      "manip_result": {
+        "timestamp": "2026-06-16T15:07:03",
+        "mode": "real",
+        "nas": 50,
+        "fps": 30,
+        "episode_time_s": 26.0,
+        "session_total_s": 31.99,
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "duration_s": 26.86,
+            "steps": 780,
+            "reinferences": 16,
+            "infer_ms_median": 76.3,
+            "reason": "completed"
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "nav_to_home_s": 79.66,
+      "nav_to_home_status": "SUCCEEDED",
+      "success": true,
+      "reason": "completed",
+      "run": 1
+    },
+    {
+      "timestamp": "2026-06-16T15:08:26",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 11.67,
+      "nav_to_poi_status": "SUCCEEDED",
+      "pose_at_poi_amcl": [
+        1.568,
+        0.921,
+        0.605
+      ],
+      "manip_s": 32.05,
+      "manip_result": {
+        "timestamp": "2026-06-16T15:09:10",
+        "mode": "real",
+        "nas": 50,
+        "fps": 30,
+        "episode_time_s": 26.0,
+        "session_total_s": 32.04,
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "duration_s": 26.92,
+            "steps": 780,
+            "reinferences": 16,
+            "infer_ms_median": 80.8,
+            "reason": "completed"
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "nav_to_home_s": 9.78,
+      "nav_to_home_status": "SUCCEEDED",
+      "success": true,
+      "reason": "completed",
+      "run": 2
+    },
+    {
+      "timestamp": "2026-06-16T15:09:23",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 29.42,
+      "nav_to_poi_status": "SUCCEEDED",
+      "pose_at_poi_amcl": [
+        1.613,
+        0.923,
+        0.562
+      ],
+      "manip_s": 31.98,
+      "manip_result": {
+        "timestamp": "2026-06-16T15:10:25",
+        "mode": "real",
+        "nas": 50,
+        "fps": 30,
+        "episode_time_s": 26.0,
+        "session_total_s": 31.97,
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "duration_s": 26.85,
+            "steps": 780,
+            "reinferences": 16,
+            "infer_ms_median": 79.0,
+            "reason": "completed"
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "nav_to_home_s": 11.18,
+      "nav_to_home_status": "SUCCEEDED",
+      "success": true,
+      "reason": "completed",
+      "run": 3
+    },
+    {
+      "timestamp": "2026-06-16T15:10:40",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 57.88,
+      "nav_to_poi_status": "SUCCEEDED",
+      "pose_at_poi_amcl": [
+        1.492,
+        0.901,
+        -0.068
+      ],
+      "manip_s": 32.02,
+      "manip_result": {
+        "timestamp": "2026-06-16T15:12:10",
+        "mode": "real",
+        "nas": 50,
+        "fps": 30,
+        "episode_time_s": 26.0,
+        "session_total_s": 32.02,
+        "episodes": [
+          {
+            "episode": 1,
+            "success": true,
+            "duration_s": 26.89,
+            "steps": 780,
+            "reinferences": 16,
+            "infer_ms_median": 78.8,
+            "reason": "completed"
+          }
+        ],
+        "totals": {
+          "n_episodes": 1,
+          "n_success": 1,
+          "n_failed": 0,
+          "rate": 1.0
+        }
+      },
+      "nav_to_home_s": 115.9,
+      "nav_to_home_status": "SUCCEEDED",
+      "success": true,
+      "reason": "completed",
+      "run": 4
+    },
+    {
+      "timestamp": "2026-06-16T15:14:09",
+      "poi": [
+        1.5,
+        1.0,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 44.49,
+      "nav_to_poi_status": "ABORTED",
+      "pose_at_poi_amcl": [
+        0.88,
+        0.246,
+        1.554
+      ],
+      "success": false,
+      "reason": "nav_to_poi_failed",
+      "run": 5
+    }
+  ],
+  "totals": {
+    "n_runs": 5,
+    "n_success": 4,
+    "success_rate": 0.8,
+    "avg_nav_to_poi_s": 31.39,
+    "avg_manip_s": 25.61,
+    "avg_nav_to_home_s": 43.3,
+    "complete": true
+  }
+}

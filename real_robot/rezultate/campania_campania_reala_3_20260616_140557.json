@@ -1,0 +1,147 @@
+{
+  "label": "campania_reala_3",
+  "timestamp": "2026-06-16T14:10:51",
+  "platform": "real_robot",
+  "config": {
+    "poi": [
+      2.0,
+      0.5,
+      0.0
+    ],
+    "home": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "runs": 5,
+    "episodes": 1,
+    "nav_timeout_s": 120.0,
+    "manip_timeout_s": 90.0
+  },
+  "runs": [
+    {
+      "timestamp": "2026-06-16T14:05:57",
+      "poi": [
+        2.0,
+        0.5,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 88.5,
+      "nav_to_poi_status": "ABORTED",
+      "pose_at_poi_amcl": [
+        1.379,
+        0.413,
+        1.078
+      ],
+      "success": false,
+      "reason": "nav_to_poi_failed",
+      "run": 1
+    },
+    {
+      "timestamp": "2026-06-16T14:07:31",
+      "poi": [
+        2.0,
+        0.5,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 31.58,
+      "nav_to_poi_status": "ABORTED",
+      "pose_at_poi_amcl": [
+        1.391,
+        0.214,
+        1.616
+      ],
+      "success": false,
+      "reason": "nav_to_poi_failed",
+      "run": 2
+    },
+    {
+      "timestamp": "2026-06-16T14:08:08",
+      "poi": [
+        2.0,
+        0.5,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 59.04,
+      "nav_to_poi_status": "ABORTED",
+      "pose_at_poi_amcl": [
+        1.268,
+        0.516,
+        1.333
+      ],
+      "success": false,
+      "reason": "nav_to_poi_failed",
+      "run": 3
+    },
+    {
+      "timestamp": "2026-06-16T14:09:13",
+      "poi": [
+        2.0,
+        0.5,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 47.33,
+      "nav_to_poi_status": "ABORTED",
+      "pose_at_poi_amcl": [
+        1.586,
+        0.087,
+        2.154
+      ],
+      "success": false,
+      "reason": "nav_to_poi_failed",
+      "run": 4
+    },
+    {
+      "timestamp": "2026-06-16T14:10:06",
+      "poi": [
+        2.0,
+        0.5,
+        0.0
+      ],
+      "home": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "nav_to_poi_s": 45.5,
+      "nav_to_poi_status": "ABORTED",
+      "pose_at_poi_amcl": [
+        14.604,
+        -0.176,
+        0.951
+      ],
+      "success": false,
+      "reason": "nav_to_poi_failed",
+      "run": 5
+    }
+  ],
+  "totals": {
+    "n_runs": 5,
+    "n_success": 0,
+    "success_rate": 0.0,
+    "avg_nav_to_poi_s": 54.39,
+    "avg_manip_s": 0.0,
+    "avg_nav_to_home_s": 0.0,
+    "complete": true
+  }
+}

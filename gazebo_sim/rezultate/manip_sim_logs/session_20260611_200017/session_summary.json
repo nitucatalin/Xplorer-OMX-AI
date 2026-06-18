@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-06-11T20:14:28.930917",
+  "mode": "gazebo_sim_adaptive",
+  "episodes": [
+    {
+      "episode": 1,
+      "success": true,
+      "reason": "completed",
+      "object": "obj_0",
+      "placed_in_box": false,
+      "placed_reason": "grasp_failed",
+      "duration_s": 27.45
+    }
+  ],
+  "totals": {
+    "n_episodes": 1,
+    "n_success": 1,
+    "n_failed": 0,
+    "rate": 1.0
+  }
+}

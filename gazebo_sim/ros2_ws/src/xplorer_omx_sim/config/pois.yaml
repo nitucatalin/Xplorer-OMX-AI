@@ -1,0 +1,15 @@
+# GENERAT de tools/gen_scene.py — POI A (start) + lantul de
+# obiecte. Folosit de mission_multi_poi.
+# seed: 11
+poi_a:
+  x: 1.0
+  y: 0.0
+  yaw: 0.0
+pois:
+  - name: B
+    x: 2.082
+    y: 1.744
+    yaw: -2.0948
+    object: cub
+    obj_x: 2.192
+    obj_y: 2.062

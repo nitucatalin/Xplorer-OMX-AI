@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-06-11T20:02:02",
+  "poi": [
+    2.6972452174268726,
+    -1.3533505143919755,
+    2.4981923363898564
+  ],
+  "nav_to_poi_s": 11.96,
+  "align_s": 30.81,
+  "align_err_before_m": 2.6393,
+  "align_err_after_m": 2.3148,
+  "manip_s": 27.12,
+  "nav_to_home_s": 12.22,
+  "success": true,
+  "placed_in_box": null,
+  "reason": "",
+  "pose_at_poi_amcl": [
+    1.0279737304350438,
+    0.03413921066578178
+  ],
+  "pose_at_poi_true": [
+    1.111315279080979,
+    -0.058634567531547305
+  ],
+  "manip_result": {
+    "timestamp": "2026-06-11T20:01:46.931398",
+    "mode": "gazebo_sim_adaptive",
+    "episodes": [
+      {
+        "episode": 1,
+        "success": true,
+        "reason": "completed",
+        "object": "obj_0",
+        "placed_in_box": false,
+        "placed_reason": "placed_outside_box",
+        "duration_s": 27.12
+      }
+    ],
+    "totals": {
+      "n_episodes": 1,
+      "n_success": 1,
+      "n_failed": 0,
+      "rate": 1.0
+    }
+  }
+}

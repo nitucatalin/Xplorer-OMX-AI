@@ -1,4 +1,4 @@
-# Zxplorer-OMX-AI — manipulare mobilă autonomă prin Physical AI
+# Xplorer-OMX-AI — manipulare mobilă autonomă prin Physical AI
 
 Cod sursă al sistemului din lucrarea de diplomă: un braț robotic OMX-AI montat
 pe platforma mobilă autonomă Xplorer-A, care execută autonom un task de apucare

@@ -46,5 +46,5 @@ Detalii complete în `real_robot/README_REAL.md`.
 
 ## Notă
 
-Bag-urile, modelele antrenate, fișierele CAD și media grea nu sunt incluse în
-repo (vezi `.gitignore`); modelele ACT sunt publicate pe Hugging Face Hub.
+Bag-urile, modelele antrenate, fișierele CAD și fișierele media prea mari nu sunt incluse în
+repo. Modelele ACT sunt publicate pe Huggingface Hub.
